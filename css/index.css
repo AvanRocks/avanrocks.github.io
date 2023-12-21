@@ -1,0 +1,18 @@
+.blurb-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blurb-div {
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+
+.me-img {
+  width: 200px;
+  margin: auto;
+}
+
+a.github {
+  color: rgb(68, 203, 227);
+}
