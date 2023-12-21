@@ -1,0 +1,30 @@
+.project-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.project-img {
+  flex: 1.5;
+}
+
+.project-div {
+  background: rgb(239, 239, 239);
+  border-radius: 10px;
+  padding: 1rem 3rem;
+}
+
+.project-div:hover {
+  cursor: pointer;
+  background:rgb(235, 235, 235)
+}
+
+.project-content {
+  display: flex;
+  align-items: top;
+}
+
+.project-desc {
+  margin-left: 2rem;
+  flex: 2;
+}

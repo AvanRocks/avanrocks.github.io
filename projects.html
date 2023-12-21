@@ -7,23 +7,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/projects-list.css">
   <link rel="stylesheet" href="css/nav-bar.css">
 </head>
 <body>
   <div class="nav-bar">
     <div>
-      <a href="/"><span class="my-name">Avaneesh Kulkarni</span></a>
+      <a href="/" class="silent-link"><span class="my-name">Avaneesh Kulkarni</span></a>
     </div>
     <div>
-      <a href="/projects.html">Projects</a>
+      <a href="/projects.html" class="silent-link">Projects</a>
     </div>
   </div>
     
-    <h1> Projects </h1>
-    <p>
-      Here are some of my coding <s> shenanigans </s> projects.
-      Click on one to read more.
-    </p>
+  <h1> Projects </h1>
+  <p>
+    Here are some of my coding <s> shenanigans </s> projects.
+    Click on one to read more.
+  </p>
+  
+  <div class="project-div" onclick="location.href='/projects/string-art.html'">
+    <h2 class="project-title">String Art</h2>
+    <div class="project-content">
+      <img src="images/string-art.png" class="project-img" alt="a string-art style picture of a house">
+      <p class="project-desc">
+      A program that mimics photographs by drawing many chords in a circle.
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>

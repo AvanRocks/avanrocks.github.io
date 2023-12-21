@@ -9,22 +9,23 @@ html, body {
 body {
   width: 38rem;
   margin: auto;
+  margin-bottom: 120px;
 }
 
-p {
+p, ul, ol, li {
   font-size: 1rem;
 }
 
-img {
+img, video {
   width: 100%;
   height: auto;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-a {
+a.silent-link {
   color: inherit;
 	text-decoration: none;
+}
+
+a.silent-link:hover {
+	text-decoration: underline;
 }

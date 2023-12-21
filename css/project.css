@@ -1,0 +1,17 @@
+.title-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.short-desc {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+
+.github-logo {
+  width: 2rem;
+}
