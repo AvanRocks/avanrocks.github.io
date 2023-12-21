@@ -6,12 +6,15 @@
 
 .project-img {
   flex: 1.5;
+  width: 20px;
 }
 
 .project-div {
   background: rgb(239, 239, 239);
   border-radius: 10px;
   padding: 1rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-div:hover {
@@ -21,7 +24,6 @@
 
 .project-content {
   display: flex;
-  align-items: top;
 }
 
 .project-desc {

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Rubik's Cube Solver Project</title>
+  <meta name="description" content="A description about Avaneesh's rubik's cube solver project.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/project.css">
+  <link rel="stylesheet" href="../css/nav-bar.css">
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="nav-bar">
+    <div>
+      <a href="/" class="silent-link"><span class="my-name">Avaneesh Kulkarni</span></a>
+    </div>
+    <div>
+      <a href="/projects.html" class="silent-link">Projects</a>
+    </div>
+  </div>
+    
+  <div class="title-div">
+    <h1> Rubik's Cube Solver </h1>
+    <a href="https://github.com/AvanRocks/rubiks-cube-solver">
+      <img src="../images/github-mark.png" target="_blank" alt="Github Invertocat logo" class="github-logo">
+    </a>
+  </div>
+  <p class="short-desc">
+  An implementation of a little-known computer-based method of solving a rubik's cube.
+  </p>
+  <img src="../images/rubiks-cube-wide.jpeg" style="width: 80%" alt="a photo of my rubik's cube">
+  
+  <p>
+  Here's a photo of my rubik's cube.
+  It's a Valk 3 I bought when I was younger and still interested in speedcubing.
+  </p>
+  
+  <p>
+  Anyway, one Sunday I woke up but didn't get up from bed.
+  Instead, I opened <a href="https://news.ycombinator.com/" target="_blank">hacker news</a> on my phone. 
+  Luckily, that led me to read <a href="https://www.stylewarning.com/posts/brute-force-rubiks-cube/">this blog post</a>
+  that outlines a obscure algorithm for solving the rubik's cube.
+  </p>
+  
+  <p>
+  Humans who solve rubik's cubes because they <s>are addicted</s> enjoy it use one of the 
+  three most popular methods for solving the rubik's cube: CFOP, Roux, and ZZ.
+  (Of course, if you don't use one of these methods, then you are not human).
+  But if you are a computer, or more probably if you are a programmer, you might not use any
+  of these methods because that's boring.
+  </p>
+
+  <p>
+  Instead, computers use one of these other algorithms to solve a rubik's cube.
+  One of these methods gives you a short solution, but it's slow and the other method runs fast 
+  but gives you a long solution.
+  I don't remember the names of these algorithms.
+  Anyway, the blog post I read described a different algorithm that finds a 20-move solution and
+  takes forever to run. XD
+  </p>
+  
+  <p>
+  The method is called the 4-list algorithm, and the blog post has some references if you want
+  to read the primary source. 
+  The cool thing about this method is that it works for more puzzles than just the rubik's cube.
+  </p>
+
+  <p>
+  Basically, the rubik's cube has 48 stickers (not including the centers) that you can move 
+  around to scramble or solve the cube.
+  So a rubik's cube state can be represented as a vector of size 48.
+  Then, each move of a face is a permutation of size 48. 
+  The scramble is also a permutation.
+  Solving a rubik's cube, then, is factoring the inverse of the scramble permutation into a 
+  product of move permutations.
+  That is, if \( s \) is the scramble, and \( p_1, p_2, ..., p_n \) are the permutations that
+  correspond to legal moves, then we want to find \( i_1, i_2, ..., i_m \) such that
+  \[
+    s^{-1} = p_{i_1} \circ p_{i_2} \circ \dots \circ p_{i_m}
+  \].
+  </p>
+  
+  <p>
+  The 4-list algorithm is able to solve this general problem of factoring a permutation as a
+  product of a set of given permutations.
+  </p>
+
+  <p>
+  I'm not going to summarize how the algorithm works here.
+  You can read the blog post if you want.
+  So anyway, I read this blog post and thought it was really cool because it taught me
+  interesting algorithms, and it used <a href="https://en.wikipedia.org/wiki/Trie">tries</a>, 
+  and it had a cool math-y vibe all around.
+  So I decided to implement it.
+  You can check out my code <a href="https://github.com/AvanRocks/rubiks-cube-solver">here</a>.
+  I used C++.
+  I estimated the worst case run time to be around 17 days.
+  Like I said, the algorithm is rly slow, but I think I did get it to be faster than the one
+  by the author of the blog post, which was written in Lisp.
+  But to be 100% honest, I'm not super confident that my implement is free of bugs.
+  Maybe I'll come back and take a comb through it again.
+  </p>
+  
+  <p>
+  Even though the algorithm is unusably slow, I still had lots of fun implementing it.
+  It was very cool, and gave me some opportunity to optimize my memory usage.
+  I think I cut off long branches of the trie, and used a single node to represent a 
+  long branch, which saved a bunch of memory.
+  </p>
+
+</body>
+</html>

@@ -15,3 +15,8 @@
 .github-logo {
   width: 2rem;
 }
+
+img {
+  display: block;
+  margin: auto;
+}
