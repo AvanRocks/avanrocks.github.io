@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Raytracer</title>
+  <meta name="description" content="A description about Avaneesh's raytracer project.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/project.css">
+  <link rel="stylesheet" href="../css/nav-bar.css">
+  <!-- MathJax -->
+  <!-- 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  -->
+</head>
+<body>
+  <div class="nav-bar">
+    <div>
+      <a href="/" class="silent-link"><span class="my-name">Avaneesh Kulkarni</span></a>
+    </div>
+    <div>
+      <a href="/projects.html" class="silent-link">Projects</a>
+    </div>
+  </div>
+    
+  <div class="title-div">
+    <h1> Raytracer </h1>
+    <a href="https://github.com/AvanRocks/raytracer">
+      <img src="../images/github-mark.png" target="_blank" alt="Github Invertocat logo" class="github-logo">
+    </a>
+  </div>
+  <p class="short-desc">
+  I made a raytracer! yayyy :)
+  </p>
+  <img src="../images/raytracer/raytracer.png" alt="an image rendered by my raytracer">
+  
+  <p>
+  The image above was rendered using my raytracer.
+  </p>
+
+  <p>
+  I had SO much fun making this project.
+  OMG, I thought it was super cool seeing these spheres be rendered.
+  And when I added reflection, I lost my mind.
+  (My raytracer also supports refraction but it looks less cool, imo).
+  </p>
+  
+  <p>
+  A raytracer is a program that renders a scene using the method called raytracing.
+  Raytracing is when you shoot rays from each pixel on the screen into the scenea
+  and determine where the ray hits an object in the screen.
+  Then, the color of that pixel where the ray originated gets set to the color of
+  object that it hit.
+  That's the basic idea, but then you can make the pixel color depend on the angle
+  that the ray makes with the intersection point to make your objects look 3D.
+  Also, you can bounce the ray multiple times to simulate reflection.
+  Also, you can check if the intersection point is lit by a light source to simulate
+  shadows.
+  And there's so many more features that you can add to a raytracer to make the 
+  rendered images look amazing.
+  </p>
+  
+  <p>
+  I read 
+  <a href="https://www.scratchapixel.com/" target="_blank"> these helpful articles </a>
+  at Scratchapixel that taught me not only about raytracing but other concepts from
+  computer graphics that help you understand what's going on in raytracing.
+  </p>
+  
+  <p>
+  Check out my code <a href="https://github.com/AvanRocks/raytracer"> here </a>.
+  The github readme explains how to build and run the raytracer for yourself.
+  I made a frontend that generates a scene filled with randomly placed spheres
+  so that you can test the raytracer on various scenes.
+  Check out the readme and try it yourself!
+  </p>
+
+</body>
+</html>
